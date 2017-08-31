@@ -37,11 +37,12 @@
     self.OptionAvailableToneInsensitive = YES;
     self.SearchText = @"";
     self.Mode = SEARCH_MODE_HZ;
-
 }
 
 -(void)Setting{
-
+    SettingViewController* setting = [[SettingViewController alloc]init];
+    setting.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:setting animated:YES];
 }
 -(void)ModeSelect{
     UIAlertController *modeSelect = [[UIAlertController alloc]init];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UmiHeader.h"
 #import "TextInputController.h"
+#import "SettingViewController.h"
 @interface DictionaryController : UIViewController<TextInputDelegate>
 @property (strong, nonatomic) IBOutlet UINavigationItem *NavigationItem;
 @property (nonatomic,strong) UITableView* tableView;

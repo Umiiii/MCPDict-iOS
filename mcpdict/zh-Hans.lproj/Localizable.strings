@@ -23,3 +23,24 @@
 "search_mode[10]" = "日语（任意读音）";
 "favorite_empty" = "没有生字";
 "favorite_empty_detail" = "在字典页面，点击查询结果右上角的五角星，可以把相应的汉字加入生字本中。";
+
+"pref_title" = "设置";
+"pref_title_mandarin_display" = "普通话显示方式";
+"pref_entries_mandarin_display[0]" = "汉语拼音";
+"pref_entries_mandarin_display[1]" = "注音符号";
+"pref_title_cantonese_romanization" = "粤语拼音系统（用于输入和显示）";
+"pref_entries_cantonese_romanization[0]" = "香港语言学学会式（粤拼）";
+"pref_entries_cantonese_romanization[1]" = "教院式";
+"pref_entries_cantonese_romanization[2]" = "耶鲁式";
+"pref_entries_cantonese_romanization[3]" = "刘锡祥式";
+"pref_title_korean_display" = "朝鲜语显示方式";
+"pref_entries_korean_display[0]" = "谚文";
+"pref_entries_korean_display[1]" = "文观部2000年式罗马字";
+"pref_title_vietnamese_tone_position" = "越南语声调标记方式";
+"pref_entries_vietnamese_tone_position[0]" = "旧式（hòa, thủy）";
+"pref_entries_vietnamese_tone_position[1]" = "新式（hoà, thuỷ）";
+"pref_title_japanese_display" = "日语显示方式";
+"pref_entries_japanese_display[0]" = "平假名";
+"pref_entries_japanese_display[1]" = "片假名";
+"pref_entries_japanese_display[2]" = "日本式罗马字";
+"pref_entries_japanese_display[3]" = "黑本式罗马字";
