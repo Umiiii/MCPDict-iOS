@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UmiHeader.h"
+#import "TextInputController.h"
+@interface DictionaryController : UIViewController<TextInputDelegate>
+@property (strong, nonatomic) IBOutlet UINavigationItem *NavigationItem;
+@property (nonatomic,strong) UITableView* tableView;
+@property (nonatomic,strong) NSArray* OptionsString;
+@property (nonatomic,strong) NSArray* ModeString;
+@property (nonatomic,strong) NSString* SearchText;
+@property (nonatomic) SEARCH_MODE Mode;
 
-@interface DictionaryController : UIViewController
+
+@property BOOL OptionAllowVariants;
+@property BOOL OptionKuangxYonghOnly;
+@property BOOL OptionToneInsensitive;
+
+@property BOOL OptionAvailableAllowVariants;
+@property BOOL OptionAvailableKuangxYonghOnly;
+@property BOOL OptionAvailableToneInsensitive;
 
 @end

@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  mcpdict
+
+  Created by Cirno on 2017/8/31.
+  Copyright © 2017年 com.umi.mcpdict. All rights reserved.
+*/
+
+"option_kuangx_yonh_only" = "仅在《广韵》内查找";
+"option_allow_variants" = "简繁、异体转换";
+"option_tone_insensitive" = "声调不敏感";
+"no_matches" = "未找到符合条件的汉字。";
+"search_mode[0]" = "汉字";
+"search_mode[1]" = "中古拼音";
+"search_mode[2]" = "普通话";
+"search_mode[3]" = "粤语";
+"search_mode[4]" = "吴语（上海话）";
+"search_mode[5]" = "闽南语";
+"search_mode[6]" = "朝鲜语";
+"search_mode[7]" = "越南语";
+"search_mode[8]" = "日语吴音";
+"search_mode[9]" = "日语汉音";
+"search_mode[10]" = "日语（任意读音）";
+"favorite_empty" = "没有生字";
+"favorite_empty_detail" = "在字典页面，点击查询结果右上角的五角星，可以把相应的汉字加入生字本中。";

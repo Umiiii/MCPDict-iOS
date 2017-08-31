@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UmiHeader.h"
 @interface FavoriteController : UIViewController
-
+@property (nonatomic,strong) UITableView* tableView;
 @end
