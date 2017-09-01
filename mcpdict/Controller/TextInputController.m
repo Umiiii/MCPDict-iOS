@@ -19,7 +19,11 @@
     self.view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     self.view.backgroundColor = kColor(233, 233, 233);
     self.isHeroEnabled = YES;
-    self.Input = [[UITextView alloc]initWithFrame:CGRectMake(0, 100, WIDTH, 44)];
+    self.Input = [[UITextField alloc]initWithFrame:CGRectMake(0, 100, WIDTH, 44)];
+    self.Input.backgroundColor = [UIColor whiteColor];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 25, 5)];
+    self.Input.leftView = view;
+    self.Input.leftViewMode = UITextFieldViewModeAlways;
     self.Input.heroID = @"searchText";
     self.Input.font = [UIFont systemFontOfSize:17.0f];
     self.navigationController.navigationBarHidden = NO;

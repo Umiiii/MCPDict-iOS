@@ -14,7 +14,7 @@
 @end
 @interface TextInputController : UIViewController
 
-@property (nonatomic,strong) UITextView* Input;
+@property (nonatomic,strong) UITextField* Input;
 @property (nonatomic,strong) NSString* str;
 @property (nonatomic,weak) id <TextInputDelegate>delegate;
 
