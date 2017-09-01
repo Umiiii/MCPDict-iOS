@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import "UmiHeader.h"
+#import <Hero/Hero-Swift.h>
 @interface ResultViewController : UITableViewController
 
 @end

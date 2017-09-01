@@ -8,7 +8,7 @@
 
 #import "ResultViewController.h"
 
-@interface ResultViewController ()
+@interface ResultViewController ()<DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 
 @end
 
@@ -16,34 +16,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    self.tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)
+                                                 style:UITableViewStylePlain];
+  
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return 44;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    cell.textLabel.text = @"123";
+
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -88,5 +89,17 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - DZNEmptyDataSetSource
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    NSString *text = NSLocalizedString(@"result_empty", "");
+    return [[NSAttributedString alloc] initWithString:text attributes:nil];
+}
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView {
+    NSString *text = NSLocalizedString(@"result_empty_detail", "");
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:text attributes:nil];
+
+    return attributedString;
+}
 
 @end

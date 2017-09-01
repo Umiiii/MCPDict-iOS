@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UmiHeader.h"
+#import <Hero/Hero-Swift.h>
 @protocol TextInputDelegate
 -(void)textDidChange:(NSString*)str;
 @end

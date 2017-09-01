@@ -10,6 +10,7 @@
 "option_allow_variants" = "简繁、异体转换";
 "option_tone_insensitive" = "声调不敏感";
 "no_matches" = "未找到符合条件的汉字。";
+"search" = "搜索";
 "search_mode[0]" = "汉字";
 "search_mode[1]" = "中古拼音";
 "search_mode[2]" = "普通话";

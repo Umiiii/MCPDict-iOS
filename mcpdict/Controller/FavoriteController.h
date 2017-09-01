@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "UmiHeader.h"
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+
 @interface FavoriteController : UIViewController
 @property (nonatomic,strong) UITableView* tableView;
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "FavoriteController.h"
-#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
 
 @interface FavoriteController ()<DZNEmptyDataSetSource,DZNEmptyDataSetDelegate>
 

@@ -10,21 +10,23 @@
 #import "UmiHeader.h"
 #import "TextInputController.h"
 #import "SettingViewController.h"
+#import "ResultViewController.h"
+#import <Hero/Hero-Swift.h>
 @interface DictionaryController : UIViewController<TextInputDelegate>
 @property (strong, nonatomic) IBOutlet UINavigationItem *NavigationItem;
 @property (nonatomic,strong) UITableView* tableView;
-@property (nonatomic,strong) NSArray* OptionsString;
-@property (nonatomic,strong) NSArray* ModeString;
-@property (nonatomic,strong) NSString* SearchText;
-@property (nonatomic) SEARCH_MODE Mode;
+@property (nonatomic,strong) NSArray* optionsString;
+@property (nonatomic,strong) NSArray* modeString;
+@property (nonatomic,strong) NSString* searchText;
+@property (nonatomic) SEARCH_MODE searchMode;
 
 
-@property BOOL OptionAllowVariants;
-@property BOOL OptionKuangxYonghOnly;
-@property BOOL OptionToneInsensitive;
+@property BOOL optionAllowVariants;
+@property BOOL optionKuangxYonghOnly;
+@property BOOL optionToneInsensitive;
 
-@property BOOL OptionAvailableAllowVariants;
-@property BOOL OptionAvailableKuangxYonghOnly;
-@property BOOL OptionAvailableToneInsensitive;
+@property BOOL optionAvailableAllowVariants;
+@property BOOL optionAvailableKuangxYonghOnly;
+@property BOOL optionAvailableToneInsensitive;
 
 @end
