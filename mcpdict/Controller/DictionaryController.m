@@ -83,7 +83,7 @@
                 {
                     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1
                                                                   reuseIdentifier:@"search"];
-                    cell.textLabel.text = @"查询内容";
+                    cell.textLabel.text = NSLocalizedString(@"search_content", "");
                     cell.detailTextLabel.text = self.searchText;
                     cell.heroID = @"searchText";
                     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -93,7 +93,7 @@
                 {
                     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1
                                                                   reuseIdentifier:@"mode"];
-                    cell.textLabel.text = @"查询模式";
+                    cell.textLabel.text = NSLocalizedString(@"search_mode", "");
                     NSString* mode = [NSString stringWithFormat:@"search_mode[%ld]",(long)self.searchMode];
                     cell.detailTextLabel.text = NSLocalizedString(mode, "");
                     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -141,15 +141,16 @@
         }
 
     }
+    
     return nil;
 }
 -(NSString*) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     switch (section) {
         case 0:
-            return @"查询";
+            return NSLocalizedString(@"search", "");
             break;
         case 1:
-            return @"选项";
+            return NSLocalizedString(@"option", "");
         default:
             break;
     }

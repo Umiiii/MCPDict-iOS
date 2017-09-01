@@ -53,7 +53,11 @@
     cell.textLabel.text = NSLocalizedString(titleStr, "");
     cell.detailTextLabel.text = NSLocalizedString(optionStr, "");
     cell.detailTextLabel.alpha = 0.5f;
+
     return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 55;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
