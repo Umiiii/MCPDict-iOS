@@ -39,13 +39,23 @@
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:value forKey:key];
 }
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 2;
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if (section == 1)
+        return 1;
     return [self.settings count];
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"setting"];
 
+    if (indexPath.section == 1){
+        cell.textLabel.text = NSLocalizedString(@"about", "");
+        cell.detailTextLabel.text = NSLocalizedString(@"about", "");
+        return cell;
+    }
     NSString* prefKey = self.settings[indexPath.row];
     NSInteger option = [self getKeyInUserDefault:prefKey];
     NSString* titleStr = [NSString stringWithFormat:@"pref_title_%@",prefKey];
@@ -61,6 +71,11 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if (indexPath.section == 1){
+        AboutViewController * about = [[AboutViewController alloc]init];
+        [self.navigationController pushViewController:about animated:YES];
+        return;
+    }
     [self selectOptions:indexPath.row];
 }
 -(void)selectOptions:(NSInteger)row{

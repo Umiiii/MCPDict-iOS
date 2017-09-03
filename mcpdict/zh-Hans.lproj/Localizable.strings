@@ -48,3 +48,6 @@
 "pref_entries_japanese_display[1]" = "片假名";
 "pref_entries_japanese_display[2]" = "日本式罗马字";
 "pref_entries_japanese_display[3]" = "黑本式罗马字";
+
+"about" = "关于";
+"about_used_library" = "鸣谢以下项目";

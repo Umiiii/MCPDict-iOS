@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UmiHeader.h"
+#import "AboutViewController.h"
 @interface SettingViewController : UITableViewController
 @property (nonatomic,strong) NSArray* settings;
 @property (nonatomic,strong) NSArray* settingOptions;

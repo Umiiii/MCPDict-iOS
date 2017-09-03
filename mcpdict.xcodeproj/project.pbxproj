@@ -17,6 +17,7 @@
 		212816081F55E55C00BDB639 /* FavoriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212816071F55E55C00BDB639 /* FavoriteController.m */; };
 		2164F6D01F586441002AA4F1 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164F6CF1F586441002AA4F1 /* ResultViewController.m */; };
 		2177934E1F5865E20066D3C0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177934D1F5865E20066D3C0 /* SettingViewController.m */; };
+		21A76AEF1F5BB6E600879F1A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76AEE1F5BB6E600879F1A /* AboutViewController.m */; };
 		21BB2BA11F5810D1006ADF84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21BB2BA31F5810D1006ADF84 /* Localizable.strings */; };
 		21BB2BAA1F582F8F006ADF84 /* TextInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BB2BA91F582F8F006ADF84 /* TextInputController.m */; };
 		5DBE616D4FA75CA839F76EFF /* Pods_mcpdict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D3392BE990A8C7E7D4FBD5 /* Pods_mcpdict.framework */; };
@@ -53,6 +54,8 @@
 		2164F6CF1F586441002AA4F1 /* ResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = Controller/ResultViewController.m; sourceTree = "<group>"; };
 		2177934C1F5865E20066D3C0 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = Controller/SettingViewController.h; sourceTree = "<group>"; };
 		2177934D1F5865E20066D3C0 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = Controller/SettingViewController.m; sourceTree = "<group>"; };
+		21A76AED1F5BB6E600879F1A /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Controller/AboutViewController.h; sourceTree = "<group>"; };
+		21A76AEE1F5BB6E600879F1A /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Controller/AboutViewController.m; sourceTree = "<group>"; };
 		21BB2BA21F5810D1006ADF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21BB2BA41F5810D6006ADF84 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		21BB2BA51F5810D6006ADF84 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 			children = (
 				2177934C1F5865E20066D3C0 /* SettingViewController.h */,
 				2177934D1F5865E20066D3C0 /* SettingViewController.m */,
+				21A76AED1F5BB6E600879F1A /* AboutViewController.h */,
+				21A76AEE1F5BB6E600879F1A /* AboutViewController.m */,
 				2164F6CE1F586441002AA4F1 /* ResultViewController.h */,
 				2164F6CF1F586441002AA4F1 /* ResultViewController.m */,
 				212816031F55E53300BDB639 /* DictionaryController.h */,
@@ -305,6 +310,7 @@
 			files = (
 				212815C31F55DFD000BDB639 /* AppDelegate.m in Sources */,
 				212815C01F55DFD000BDB639 /* main.m in Sources */,
+				21A76AEF1F5BB6E600879F1A /* AboutViewController.m in Sources */,
 				21BB2BAA1F582F8F006ADF84 /* TextInputController.m in Sources */,
 				2177934E1F5865E20066D3C0 /* SettingViewController.m in Sources */,
 				212816051F55E53300BDB639 /* DictionaryController.m in Sources */,
