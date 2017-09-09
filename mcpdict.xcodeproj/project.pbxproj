@@ -15,11 +15,27 @@
 		212815F61F55E3FC00BDB639 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 212815F81F55E3FC00BDB639 /* InfoPlist.strings */; };
 		212816051F55E53300BDB639 /* DictionaryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212816041F55E53300BDB639 /* DictionaryController.m */; };
 		212816081F55E55C00BDB639 /* FavoriteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 212816071F55E55C00BDB639 /* FavoriteController.m */; };
+		21476D411F62DD47003D1731 /* SettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21476D401F62DD46003D1731 /* SettingManager.m */; };
 		2164F6D01F586441002AA4F1 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2164F6CF1F586441002AA4F1 /* ResultViewController.m */; };
 		2177934E1F5865E20066D3C0 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177934D1F5865E20066D3C0 /* SettingViewController.m */; };
+		2177BE6D1F628D6E007DCE47 /* Tone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE6C1F628D6E007DCE47 /* Tone.m */; };
+		2177BE701F628E28007DCE47 /* MiddleChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE6F1F628E28007DCE47 /* MiddleChinese.m */; };
+		2177BE731F628E37007DCE47 /* Mandarin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE721F628E37007DCE47 /* Mandarin.m */; };
+		2177BE761F628E4F007DCE47 /* Cantonese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE751F628E4F007DCE47 /* Cantonese.m */; };
+		2177BE811F628EEF007DCE47 /* Minnan.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE7E1F628EEF007DCE47 /* Minnan.m */; };
+		2177BE821F628EEF007DCE47 /* Shanghai.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE801F628EEF007DCE47 /* Shanghai.m */; };
+		2177BE851F628F00007DCE47 /* Korean.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE841F628F00007DCE47 /* Korean.m */; };
+		2177BE881F628F0C007DCE47 /* Vietnamese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE871F628F0C007DCE47 /* Vietnamese.m */; };
+		2177BE8B1F628F16007DCE47 /* Japanese.m in Sources */ = {isa = PBXBuildFile; fileRef = 2177BE8A1F628F16007DCE47 /* Japanese.m */; };
 		21A76AEF1F5BB6E600879F1A /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76AEE1F5BB6E600879F1A /* AboutViewController.m */; };
+		21A76AF51F5BCB5200879F1A /* ResultCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76AF31F5BCB5200879F1A /* ResultCell.m */; };
+		21A76AF61F5BCB5200879F1A /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A76AF41F5BCB5200879F1A /* ResultCell.xib */; };
+		21A76AFA1F5BD37400879F1A /* CharacterTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76AF81F5BD37400879F1A /* CharacterTagCell.m */; };
+		21A76AFE1F5BF17E00879F1A /* Orthography.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76AFD1F5BF17E00879F1A /* Orthography.m */; };
+		21A76B011F5BF70000879F1A /* Hanzi.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A76B001F5BF70000879F1A /* Hanzi.m */; };
 		21BB2BA11F5810D1006ADF84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21BB2BA31F5810D1006ADF84 /* Localizable.strings */; };
 		21BB2BAA1F582F8F006ADF84 /* TextInputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BB2BA91F582F8F006ADF84 /* TextInputController.m */; };
+		21F1D29F1F61981A004BE088 /* ResultViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 21F1D29E1F61981A004BE088 /* ResultViewLayout.m */; };
 		5DBE616D4FA75CA839F76EFF /* Pods_mcpdict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7D3392BE990A8C7E7D4FBD5 /* Pods_mcpdict.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,12 +66,41 @@
 		212816061F55E55C00BDB639 /* FavoriteController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FavoriteController.h; path = Controller/FavoriteController.h; sourceTree = "<group>"; };
 		212816071F55E55C00BDB639 /* FavoriteController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FavoriteController.m; path = Controller/FavoriteController.m; sourceTree = "<group>"; };
 		2128160A1F55E71000BDB639 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		21476D3F1F62DD46003D1731 /* SettingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingManager.h; path = Model/SettingManager.h; sourceTree = "<group>"; };
+		21476D401F62DD46003D1731 /* SettingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingManager.m; path = Model/SettingManager.m; sourceTree = "<group>"; };
 		2164F6CE1F586441002AA4F1 /* ResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResultViewController.h; path = Controller/ResultViewController.h; sourceTree = "<group>"; };
 		2164F6CF1F586441002AA4F1 /* ResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResultViewController.m; path = Controller/ResultViewController.m; sourceTree = "<group>"; };
 		2177934C1F5865E20066D3C0 /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = Controller/SettingViewController.h; sourceTree = "<group>"; };
 		2177934D1F5865E20066D3C0 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = Controller/SettingViewController.m; sourceTree = "<group>"; };
+		2177BE6B1F628D6E007DCE47 /* Tone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tone.h; path = Model/Tone.h; sourceTree = "<group>"; };
+		2177BE6C1F628D6E007DCE47 /* Tone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Tone.m; path = Model/Tone.m; sourceTree = "<group>"; };
+		2177BE6E1F628E28007DCE47 /* MiddleChinese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiddleChinese.h; sourceTree = "<group>"; };
+		2177BE6F1F628E28007DCE47 /* MiddleChinese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiddleChinese.m; sourceTree = "<group>"; };
+		2177BE711F628E37007DCE47 /* Mandarin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mandarin.h; sourceTree = "<group>"; };
+		2177BE721F628E37007DCE47 /* Mandarin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mandarin.m; sourceTree = "<group>"; };
+		2177BE741F628E4F007DCE47 /* Cantonese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cantonese.h; sourceTree = "<group>"; };
+		2177BE751F628E4F007DCE47 /* Cantonese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cantonese.m; sourceTree = "<group>"; };
+		2177BE7D1F628EEF007DCE47 /* Minnan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Minnan.h; sourceTree = "<group>"; };
+		2177BE7E1F628EEF007DCE47 /* Minnan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Minnan.m; sourceTree = "<group>"; };
+		2177BE7F1F628EEF007DCE47 /* Shanghai.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shanghai.h; sourceTree = "<group>"; };
+		2177BE801F628EEF007DCE47 /* Shanghai.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shanghai.m; sourceTree = "<group>"; };
+		2177BE831F628F00007DCE47 /* Korean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Korean.h; sourceTree = "<group>"; };
+		2177BE841F628F00007DCE47 /* Korean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Korean.m; sourceTree = "<group>"; };
+		2177BE861F628F0C007DCE47 /* Vietnamese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vietnamese.h; sourceTree = "<group>"; };
+		2177BE871F628F0C007DCE47 /* Vietnamese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vietnamese.m; sourceTree = "<group>"; };
+		2177BE891F628F16007DCE47 /* Japanese.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Japanese.h; sourceTree = "<group>"; };
+		2177BE8A1F628F16007DCE47 /* Japanese.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Japanese.m; sourceTree = "<group>"; };
 		21A76AED1F5BB6E600879F1A /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AboutViewController.h; path = Controller/AboutViewController.h; sourceTree = "<group>"; };
 		21A76AEE1F5BB6E600879F1A /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AboutViewController.m; path = Controller/AboutViewController.m; sourceTree = "<group>"; };
+		21A76AF21F5BCB5200879F1A /* ResultCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ResultCell.h; path = View/ResultCell.h; sourceTree = "<group>"; };
+		21A76AF31F5BCB5200879F1A /* ResultCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ResultCell.m; path = View/ResultCell.m; sourceTree = "<group>"; };
+		21A76AF41F5BCB5200879F1A /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ResultCell.xib; path = View/ResultCell.xib; sourceTree = "<group>"; };
+		21A76AF71F5BD37400879F1A /* CharacterTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CharacterTagCell.h; path = View/CharacterTagCell.h; sourceTree = "<group>"; };
+		21A76AF81F5BD37400879F1A /* CharacterTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CharacterTagCell.m; path = View/CharacterTagCell.m; sourceTree = "<group>"; };
+		21A76AFC1F5BF17E00879F1A /* Orthography.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Orthography.h; sourceTree = "<group>"; };
+		21A76AFD1F5BF17E00879F1A /* Orthography.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Orthography.m; sourceTree = "<group>"; };
+		21A76AFF1F5BF70000879F1A /* Hanzi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hanzi.h; sourceTree = "<group>"; };
+		21A76B001F5BF70000879F1A /* Hanzi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hanzi.m; sourceTree = "<group>"; };
 		21BB2BA21F5810D1006ADF84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21BB2BA41F5810D6006ADF84 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		21BB2BA51F5810D6006ADF84 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -63,6 +108,8 @@
 		21BB2BA71F5810D8006ADF84 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		21BB2BA81F582F8F006ADF84 /* TextInputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TextInputController.h; path = Controller/TextInputController.h; sourceTree = "<group>"; };
 		21BB2BA91F582F8F006ADF84 /* TextInputController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TextInputController.m; path = Controller/TextInputController.m; sourceTree = "<group>"; };
+		21F1D29D1F61981A004BE088 /* ResultViewLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResultViewLayout.h; sourceTree = "<group>"; };
+		21F1D29E1F61981A004BE088 /* ResultViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResultViewLayout.m; sourceTree = "<group>"; };
 		21F9598D1F57ED5300F3B099 /* mcpdict.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = mcpdict.db; sourceTree = SOURCE_ROOT; };
 		21F9598E1F57F37800F3B099 /* UmiHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UmiHeader.h; path = Model/UmiHeader.h; sourceTree = "<group>"; };
 		93B67FAB4F55E4247959444F /* Pods-mcpdict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mcpdict.release.xcconfig"; path = "Pods/Target Support Files/Pods-mcpdict/Pods-mcpdict.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +178,12 @@
 		212816001F55E4E400BDB639 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21476D3F1F62DD46003D1731 /* SettingManager.h */,
+				21476D401F62DD46003D1731 /* SettingManager.m */,
+				2177BE8C1F628F2A007DCE47 /* Orthography */,
 				21F9598E1F57F37800F3B099 /* UmiHeader.h */,
+				2177BE6B1F628D6E007DCE47 /* Tone.h */,
+				2177BE6C1F628D6E007DCE47 /* Tone.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -139,6 +191,13 @@
 		212816011F55E4E700BDB639 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				21A76AF21F5BCB5200879F1A /* ResultCell.h */,
+				21A76AF31F5BCB5200879F1A /* ResultCell.m */,
+				21A76AF41F5BCB5200879F1A /* ResultCell.xib */,
+				21A76AF71F5BD37400879F1A /* CharacterTagCell.h */,
+				21A76AF81F5BD37400879F1A /* CharacterTagCell.m */,
+				21F1D29D1F61981A004BE088 /* ResultViewLayout.h */,
+				21F1D29E1F61981A004BE088 /* ResultViewLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -160,6 +219,33 @@
 				212816071F55E55C00BDB639 /* FavoriteController.m */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		2177BE8C1F628F2A007DCE47 /* Orthography */ = {
+			isa = PBXGroup;
+			children = (
+				2177BE711F628E37007DCE47 /* Mandarin.h */,
+				2177BE721F628E37007DCE47 /* Mandarin.m */,
+				2177BE741F628E4F007DCE47 /* Cantonese.h */,
+				2177BE751F628E4F007DCE47 /* Cantonese.m */,
+				2177BE7D1F628EEF007DCE47 /* Minnan.h */,
+				2177BE7E1F628EEF007DCE47 /* Minnan.m */,
+				2177BE7F1F628EEF007DCE47 /* Shanghai.h */,
+				2177BE801F628EEF007DCE47 /* Shanghai.m */,
+				21A76AFF1F5BF70000879F1A /* Hanzi.h */,
+				21A76B001F5BF70000879F1A /* Hanzi.m */,
+				21A76AFC1F5BF17E00879F1A /* Orthography.h */,
+				21A76AFD1F5BF17E00879F1A /* Orthography.m */,
+				2177BE6E1F628E28007DCE47 /* MiddleChinese.h */,
+				2177BE6F1F628E28007DCE47 /* MiddleChinese.m */,
+				2177BE831F628F00007DCE47 /* Korean.h */,
+				2177BE841F628F00007DCE47 /* Korean.m */,
+				2177BE861F628F0C007DCE47 /* Vietnamese.h */,
+				2177BE871F628F0C007DCE47 /* Vietnamese.m */,
+				2177BE891F628F16007DCE47 /* Japanese.h */,
+				2177BE8A1F628F16007DCE47 /* Japanese.m */,
+			);
+			path = Orthography;
 			sourceTree = "<group>";
 		};
 		4655898CED1E1C1A946E364C /* Frameworks */ = {
@@ -249,6 +335,7 @@
 				212815D11F55DFD000BDB639 /* LaunchScreen.storyboard in Resources */,
 				212815F61F55E3FC00BDB639 /* InfoPlist.strings in Resources */,
 				212815CE1F55DFD000BDB639 /* Assets.xcassets in Resources */,
+				21A76AF61F5BCB5200879F1A /* ResultCell.xib in Resources */,
 				212815CC1F55DFD000BDB639 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,14 +395,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2177BE8B1F628F16007DCE47 /* Japanese.m in Sources */,
+				2177BE761F628E4F007DCE47 /* Cantonese.m in Sources */,
+				21A76B011F5BF70000879F1A /* Hanzi.m in Sources */,
 				212815C31F55DFD000BDB639 /* AppDelegate.m in Sources */,
+				2177BE851F628F00007DCE47 /* Korean.m in Sources */,
 				212815C01F55DFD000BDB639 /* main.m in Sources */,
+				2177BE811F628EEF007DCE47 /* Minnan.m in Sources */,
+				2177BE881F628F0C007DCE47 /* Vietnamese.m in Sources */,
+				21476D411F62DD47003D1731 /* SettingManager.m in Sources */,
 				21A76AEF1F5BB6E600879F1A /* AboutViewController.m in Sources */,
+				21A76AF51F5BCB5200879F1A /* ResultCell.m in Sources */,
+				21A76AFA1F5BD37400879F1A /* CharacterTagCell.m in Sources */,
 				21BB2BAA1F582F8F006ADF84 /* TextInputController.m in Sources */,
 				2177934E1F5865E20066D3C0 /* SettingViewController.m in Sources */,
 				212816051F55E53300BDB639 /* DictionaryController.m in Sources */,
+				21F1D29F1F61981A004BE088 /* ResultViewLayout.m in Sources */,
 				212816081F55E55C00BDB639 /* FavoriteController.m in Sources */,
+				2177BE6D1F628D6E007DCE47 /* Tone.m in Sources */,
+				2177BE701F628E28007DCE47 /* MiddleChinese.m in Sources */,
+				21A76AFE1F5BF17E00879F1A /* Orthography.m in Sources */,
+				2177BE821F628EEF007DCE47 /* Shanghai.m in Sources */,
 				2164F6D01F586441002AA4F1 /* ResultViewController.m in Sources */,
+				2177BE731F628E37007DCE47 /* Mandarin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +593,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = umi.mcpdict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wdocumentation";
 			};
 			name = Debug;
 		};
@@ -506,6 +609,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = umi.mcpdict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wdocumentation";
 			};
 			name = Release;
 		};

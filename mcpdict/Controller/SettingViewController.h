@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SettingManager.h"
 #import "UmiHeader.h"
 #import "AboutViewController.h"
 @interface SettingViewController : UITableViewController

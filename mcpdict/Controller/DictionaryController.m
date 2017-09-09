@@ -33,7 +33,7 @@
                           NSLocalizedString(@"option_allow_variants",""),
                           NSLocalizedString(@"option_tone_insensitive", ""), nil];
     self.searchText = @"";
-    self.searchMode = SEARCH_MODE_HZ;
+    self.searchMode = SearchModeHZ;
     //self.navigationController.isHeroEnabled = YES;
     [self updateOptionsAvailable];
 }
@@ -44,15 +44,15 @@
     [self.navigationController pushViewController:setting animated:YES];
 }
 -(void)updateOptionsAvailable{
-    self.optionAvailableKuangxYonghOnly = self.searchMode != SEARCH_MODE_MC;
-    self.optionAvailableAllowVariants = self.searchMode == SEARCH_MODE_HZ;
+    self.optionAvailableKuangxYonghOnly = self.searchMode != SearchModeMC;
+    self.optionAvailableAllowVariants = self.searchMode == SearchModeHZ;
     self.optionAvailableToneInsensitive =
-    self.searchMode == SEARCH_MODE_MC ||
-    self.searchMode == SEARCH_MODE_PU ||
-    self.searchMode == SEARCH_MODE_CT ||
-    self.searchMode == SEARCH_MODE_SH ||
-    self.searchMode == SEARCH_MODE_MN ||
-    self.searchMode == SEARCH_MODE_VN;
+    self.searchMode == SearchModeMC ||
+    self.searchMode == SearchModePU ||
+    self.searchMode == SearchModeCT ||
+    self.searchMode == SearchModeSH ||
+    self.searchMode == SearchModeMN ||
+    self.searchMode == SearchModeVN;
 }
 -(void)ModeSelect{
     UIAlertController *modeSelect = [[UIAlertController alloc]init];

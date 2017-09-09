@@ -21,11 +21,11 @@
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.settings = [[NSArray alloc]initWithObjects:
-                     @"mandarin_display",
-                     @"cantonese_romanization",
-                     @"korean_display",
-                     @"vietnamese_tone_position",
-                     @"japanese_display",
+                     MandarinStr,
+                     CantoneseStr,
+                     KoreanStr,
+                     VietnameseStr,
+                     JapaneseStr,
                      nil];
     self.settingOptions = [[NSArray alloc]initWithObjects:@2,@4,@2,@2,@4, nil];
 }
@@ -51,11 +51,7 @@
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"setting"];
 
-    if (indexPath.section == 1){
-        cell.textLabel.text = NSLocalizedString(@"about", "");
-        cell.detailTextLabel.text = NSLocalizedString(@"about", "");
-        return cell;
-    }
+
     NSString* prefKey = self.settings[indexPath.row];
     NSInteger option = [self getKeyInUserDefault:prefKey];
     NSString* titleStr = [NSString stringWithFormat:@"pref_title_%@",prefKey];
@@ -63,7 +59,11 @@
     cell.textLabel.text = NSLocalizedString(titleStr, "");
     cell.detailTextLabel.text = NSLocalizedString(optionStr, "");
     cell.detailTextLabel.alpha = 0.5f;
-
+    if (indexPath.section == 1){
+        cell.textLabel.text = NSLocalizedString(@"about", "");
+        cell.detailTextLabel.text = NSLocalizedString(@"about", "");
+        return cell;
+    }
     return cell;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

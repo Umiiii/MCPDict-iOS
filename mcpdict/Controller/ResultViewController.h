@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
-#import "UmiHeader.h"
 #import <Hero/Hero-Swift.h>
+#import "ResultCell.h"
+#import "UmiHeader.h"
+#import "Orthography.h"
+
 @interface ResultViewController : UITableViewController
+@property (nonatomic,strong) NSArray<Orthography*>* result;
+
+
 
 @end

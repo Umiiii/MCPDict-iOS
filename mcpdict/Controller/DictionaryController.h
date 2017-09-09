@@ -18,7 +18,7 @@
 @property (nonatomic,strong) NSArray* optionsString;
 @property (nonatomic,strong) NSArray* modeString;
 @property (nonatomic,strong) NSString* searchText;
-@property (nonatomic) SEARCH_MODE searchMode;
+@property (nonatomic) SearchMode searchMode;
 
 
 @property BOOL optionAllowVariants;

@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#if DEBUG
+#import "FLEXManager.h"
+#endif
 @interface AppDelegate ()
 
 @end
@@ -19,6 +21,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     BOOL firstLoad = [userDefaults boolForKey:@"firstLoad"];
+
     if (!firstLoad){
         [userDefaults setBool:YES forKey:@"firstLoad"];
         [userDefaults setInteger:0 forKey:@"mandarin_display"];
